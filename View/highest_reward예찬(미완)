@@ -1,0 +1,112 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+void swap(char[]);
+int swap_end_check(char[]);
+int start = 0;
+int main()
+{
+	int i, j, k, tc, change;
+	int temp;
+	char num[6];
+	scanf("%d", &tc);
+	for (i = 0; i < tc; i++)
+	{
+		scanf("%s %d", num, &change);
+		if (strlen(num)==1)//입력이 1의 자리일 경우
+		{
+			printf("#%d %c", i + 1, num[0]);
+			continue;
+		}
+
+		for (j = 0; j < change; j++)
+		{
+			if (swap_end_check(num))//최대상금 상태일때
+			{
+				if ((change - j + 1) % 2 == 0)//남은 스왑이 2의배수
+					break;
+				else//맨끝 두자리만 바꾸고 end
+				{
+					temp = num[strlen(num) - 2];
+					num[strlen(num) - 2] = num[strlen(num) - 1];
+					num[strlen(num) - 1] = temp;
+					break;
+				}
+			}
+			swap(num);
+		}
+		printf("#%d ", i + 1);
+		puts(num);
+		start = 0;
+	}
+
+
+	return 0;
+}
+void swap(char num[6])
+{
+	int i, max, max_position = 0;
+	int temp;
+	int same_count=0;
+	for (i = start; i < strlen(num); i++)
+	{
+		if (i == start)
+			max = num[i];
+		else if (max < num[i])
+		{
+			max = num[i];
+			max_position = i;
+		}
+		else if (max == num[i])
+		{
+			same_count++;
+			if (i > max_position)
+				max_position = i;
+		}
+		if (i == (strlen(num) - 1) && max_position == start)//최대값의 위치가 배열 앞일경우
+		{
+			start++;
+			i = start;
+			same_count = 0;
+		}
+		if (i == (strlen(num) - 1) && max_position == same_count - 1)//최대값이 배열 앞에서부터 차례로 있을경우
+		{
+			start = max_position + 1;
+			i = start;
+			same_count = 0;
+		}
+	}
+	
+
+	for (i = start; i < max_position; i++)//스왑
+	{
+		if (num[i] < max)
+		{
+			temp = num[i];
+			num[i] = max;
+			num[max_position] = temp;
+			break;
+		}
+		else if (num[i] == max)
+			continue;
+	}
+}
+int swap_end_check(char num[6])
+{
+	int i,temp;
+	for (i = 0; i < strlen(num); i++)//상금이 최대인지 확인(내림차순)
+	{
+		if (i == 0)
+			temp = num[i];
+		else if (temp >= num[i])
+		{
+			temp = num[i];
+			continue;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
