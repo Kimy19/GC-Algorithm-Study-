@@ -10,9 +10,9 @@
   
 ## 알고리즘 문제 출처
 **문제 사이트**
-* [백준] (https://www.acmicpc.net/)
-* [프로그래머스] (https://programmers.co.kr/)
-* [SW Expert Academy] (https://swexpertacademy.com/)
+* [백준](https://www.acmicpc.net/)
+* [프로그래머스](https://programmers.co.kr/)
+* [SW Expert Academy](https://swexpertacademy.com/)
   
 **문제집**
 * 알고리즘 문제해결 능력 1,2권 ~~종만북~~
