@@ -19,11 +19,11 @@
   
 ## 운영방식
 > 여러 알고리즘 사이트와 문제집을 보고 주 1회 문제를 풀고 코드 리뷰를 진행
->  각 문제번호를 추가하여 코드를 master에 바로 업로드
+> 각 문제번호를 추가하여 코드를 master에 바로 업로드
 >
-> 파일 형식
-> 
+> **파일명
 > SW Expert Academy: 문제 번호 . (사용 언어 확장자)
+> *주석이나 깃허브 Comemnt를 통해 설명 이해를 위한 설명추가
   
 ## 문제
 - [구구단2](https://swexpertacademy.com/main/identity/anonymous/loginPage.do)
