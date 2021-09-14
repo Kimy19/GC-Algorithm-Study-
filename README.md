@@ -11,6 +11,7 @@
 ## 🔍알고리즘 문제 출처
 **문제 사이트**
 * [백준](https://www.acmicpc.net/)
+  - [Dynamic Programming](https://www.acmicpc.net/problemset?sort=ac_desc&algo=25)
 * [프로그래머스](https://programmers.co.kr/)
   - [유형별 문제](https://programmers.co.kr/learn/challenges)
 * [SW Expert Academy](https://swexpertacademy.com/)
@@ -24,7 +25,8 @@
 > 각 문제번호를 추가하여 코드를 master에 바로 업로드
 
 **파일명**
-> SW Expert Academy: 문제 번호 . (사용 언어 확장자)   
+> SW Expert Academy: 본인이름_문제 번호.(사용 언어 확장자) *ex) 서수영_1234.px*
+> BACKJOON: 본인이름_문제 번호.(사용 언어 확장자)
 
 **규칙**
 > 주석이나 깃허브 Comemnt를 통해 설명 이해를 위한 설명추가   
