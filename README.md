@@ -13,6 +13,7 @@
 * [백준](https://www.acmicpc.net/)
   - [Dynamic Programming](https://www.acmicpc.net/problemset?sort=ac_desc&algo=25)
   - [Greedy](https://www.acmicpc.net/problemset?sort=ac_desc&algo=33)
+  - [Graph Theory](https://www.acmicpc.net/problemset?sort=ac_desc&algo=7)
 * [프로그래머스](https://programmers.co.kr/)
   - [유형별 문제](https://programmers.co.kr/learn/challenges)
 * [SW Expert Academy](https://swexpertacademy.com/)
