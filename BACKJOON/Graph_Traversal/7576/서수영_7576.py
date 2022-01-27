@@ -2,7 +2,7 @@ import sys
 from collections import deque
 sys.setrecursionlimit(10**6)
 
-sys.stdin = open('input.txt', 'r')
+#sys.stdin = open('input.txt', 'r')
 
 M, N = map(int, input().split(' '))
 graph = []
