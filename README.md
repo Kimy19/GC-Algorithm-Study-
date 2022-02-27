@@ -3,7 +3,7 @@
 
 
 ## 👨‍💻팀원
-* [서수영](https://github.com/Hashswim) (Python, C++)
+* [서수영](https://github.com/Hashswim) (Python, C++, Swift)
 * [박민석](https://github.com/pogihae) (Java, C++)
 * [김예찬](https://github.com/Kimy19) (C++)
 * [민지원](https://github.com/mjwcd) (C++)
